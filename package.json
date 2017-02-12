@@ -1,0 +1,20 @@
+{
+  "name": "notion-lambda",
+  "version": "1.0.0",
+  "description": "Lambda utilties for notion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "notion",
+    "lambda",
+    "functions"
+  ],
+  "author": "Eric Bower",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "tape": "^4.6.3"
+  }
+}
