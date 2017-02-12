@@ -1,0 +1,27 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:us-east-1:755352112031:githubBot:4b4169fc-97f7-4d72-8ee6-289f6a3dd289",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "81191647-090b-5adb-8d54-475d8cd33a21",
+                "TopicArn": "arn:aws:sns:us-east-1:755352112031:githubBot",
+                "Subject": null,
+                "Message": "{\"action\":\"submitted\"}",
+                "Timestamp": "2017-02-12T15:47:36.660Z",
+                "SignatureVersion": "1",
+                "Signature": "NG0cjh69CTMQk2pnGeXqTt9YB1TbLRqy0binV3H3CkzyRRkJXfkTd2bvo9vhAKwc2E3j4vMx/FcbZZJ2umKm7ZYnx9CpXRYJoGtxOD89j3FZmSEHbBFVinHiEiBj2RirUsvpJEcSivu5hhE/r0ZtLh6+9ix8urKJakODCCaXiMULWM73+s0TsAiOWMFegfhKdzzJtLVvVFG5N9Kbs4b5Tx4k+/uT4J5exfe3nIOaWjC7tOYhn7k0g5OqnEoqen45ndlwzAykVXfiWSYYYt7Tgt+iF1xq4inSp93Z3J8yhKUsSNziYxZevpDgVQutudpS3xBQLscZEl9kY1zCk1Rvaw==",
+                "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-b95095beb82e8f6a046b3aafc7f4149a.pem",
+                "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:755352112031:githubBot:4b4169fc-97f7-4d72-8ee6-289f6a3dd289",
+                "MessageAttributes": {
+                    "X-Github-Event": {
+                        "Type": "String",
+                        "Value": "pull_request_review"
+                    }
+                }
+            }
+        }
+    ]
+}

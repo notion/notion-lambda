@@ -1,9 +1,11 @@
 'use strict';
 
-console.log('Loading function');
+const util = require('./util');
 
 exports.handler = (event, context, callback) => {
-    const message = event.Records[0].Sns.Message;
-    console.log('From SNS:', message);
-    callback(null, message);
-};
+  const issues = util.getJiraIssuesFromEvent(event);
+  util.transitionJiraIssues(issues);
+
+  console.log('Processing issues:', issues);
+  callback(null, issues);
+}

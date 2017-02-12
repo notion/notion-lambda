@@ -1,0 +1,24 @@
+const GithubApi = require('github');
+
+const github = new GithubApi({ version: '3.0.0' });
+
+github.authenticate({
+  type: 'oauth',
+  token: process.env.GH_TOKEN,
+});
+
+github.repos.createHook({
+  owner: 'notion',
+  repo: process.env.GH_REPO,
+  name: 'amazonsns',
+  config: {
+    'aws_key': process.env.AWS_KEY,
+    'aws_secret': process.env.AWS_SECRET,
+    'sns_topic': process.env.AWS_SNS_TOPIC,
+    'sns_region': process.env.AWS_SNS_REGION || 'us-east-1',
+  },
+  events: ['pull_request_review'],
+}, (err, result) => {
+  console.log(err);
+  console.log(result);
+});
