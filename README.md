@@ -11,7 +11,7 @@
 ### Environment variables
 
 * GH_TOKEN="" // Github personal access token
-* GH_REPO="" // Github repo to receive events from
+* GH_REPOS="" // Github repos to receive events from, comma delimited, e.g. "desktop,ml"
 * AWS_KEY=""
 * AWS_SECRET=""
 * AWS_SNS_TOPIC=""
